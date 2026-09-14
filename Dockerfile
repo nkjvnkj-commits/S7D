@@ -6,6 +6,6 @@ RUN curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/inst
 
 ENV PATH="/root/.rokit/bin:$PATH"
 
-RUN rokit init && rokit add lune --global
+RUN rokit init && rokit add lune-org/lune --global
 
 CMD ["lune", "--version"]
