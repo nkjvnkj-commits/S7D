@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN apt-get update && apt-get install -y curl bash && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y curl bash unzip && rm -rf /var/lib/apt/lists/*
 
 RUN curl -sSf https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
 
